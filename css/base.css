@@ -147,6 +147,16 @@ body,html{
     float: right;
 }
 
+.flex{
+    display: flex;
+}
+.column{
+    flex-direction: column;
+}
+.between{
+    justify-content: space-between
+}
+
 /* 组件 */
 .page-block{
     background-color: #fff;
@@ -170,7 +180,6 @@ body,html{
     display: flex;
     justify-content:space-between;
     flex-direction: column;
-    height: 100px;
 }
 .img-cover,.card{
     width: 100%;
@@ -190,7 +199,7 @@ body,html{
     display: flex;
     justify-content: space-between;
     width:70%;
-    line-height: 18px;
+    /* line-height: 18px; */
 }
 
 .symbol{
