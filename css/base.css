@@ -1,0 +1,198 @@
+@import url(/css/reset.css);
+
+body,html{
+    font-family: 'PingFang-SC';
+    color:rgb(51,51,51);
+    background-color: rgb(238,238,238);
+}
+
+/* 栅格 */
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
+    display: inline-block;
+}
+.col-1{
+    width: 8.33%;
+}
+.col-2{
+    width: 16.66%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.33%;
+}
+.col-5{
+    width: 41.66%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.33%;
+}
+.col-8{
+    width: 66.66%;
+}
+.col-9{
+    width: 75%;
+}
+.col-10{
+    width: 83.33%;
+}
+.col-11{
+    width: 91.66%;
+}
+.col-12{
+    width: 100%;
+}
+
+/* 字号 */
+.fs-36{
+    font-size: 36px;
+}
+.fs-32{
+    font-size: 32px;
+}
+.fs-28{
+    font-size: 28px;
+}
+.fs-26{
+    font-size: 26px;
+}
+.fs-24{
+    font-size: 24px;
+}
+.fs-22{
+    font-size: 22px;
+}
+.fs-20{
+    font-size: 20px;
+}
+
+/* 颜色 */
+.c-51{
+    color:rgb(51,51,51)
+}
+.c-68{
+    color:rgb(68,68,68)
+}
+.c-102{
+    color:rgb(102,102,102)
+}
+.c-167{
+    color:rgb(167,167,167)
+}
+.c-238{
+    color:rgb(238,238,238)
+}
+.c-red{
+    color:rgb(196,0,0);
+}
+
+.bg-white{
+
+}
+
+/* 字重 */
+.fw-bold{
+    font-weight: bold
+}
+
+/* 对齐 */
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+
+/* 间距 */
+.mb-1{
+    margin-bottom: 1px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-16{
+    margin-bottom: 16px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+
+.pa-20{
+    padding: 20px;
+}
+.ptb-40{
+    padding: 40px 0;
+}
+
+/* 边框线 */
+.bd-1{
+    border-bottom: 1px solid rgb(238,238,238)
+}
+
+/* 功能 */
+.pos-center{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.pull-right{
+    float: right;
+}
+
+/* 组件 */
+.page-block{
+    background-color: #fff;
+}
+.product-item{
+    display: flex;
+}
+.product-item.column{
+    display: flex;
+    flex-direction: column;
+}
+.product-item .thumbs{
+    display: inline-block;
+    width: 30%;
+    margin-right: 20px;
+}
+.product-item div{
+    vertical-align: top;
+}
+.product-item .desc{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    height: 100px;
+}
+.img-cover,.card{
+    width: 100%;
+    padding-bottom: 100%;
+    background-size: 100% auto;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+.card{
+    position: relative;
+    padding-bottom:75%;
+    background-color: #fff;
+    border:1px solid #ccc;
+}
+.card-content{
+    display: flex;
+    justify-content: space-between;
+    width:70%;
+    line-height: 18px;
+}
+
+.symbol{
+    font-size:12px;
+}

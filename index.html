@@ -4,89 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>二小通知书打印页</title>
-    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/FileSaver.js/2014-11-29/FileSaver.min.js"></script>
-    <script src="export.js"></script>
+    <title>说明文档</title>
 </head>
-<style>
-body{
-    padding: 0;
-    margin: 0;
-    font-family: '楷体'
-}
-span{
-    position: absolute;
-    display: inline-block;
-    font-family: '楷体' !important;
-}
-.textArea,.textArea span,.cell{
-    font-size: 17px !important;
-}
-.textArea span{
-    text-indent: 2em !important;
-}
-</style>
 <body>
-    <div id="app" style="position:relative;width:210mm;height:297mm;border:1px solid #000000;">
-        <span contenteditable="true" style="font-size:14px;top:67mm;left:78mm">一</span>
-        <span contenteditable="true" style="font-size:14px;top:67mm;left:100mm">八</span>
-        <span contenteditable="true" style="font-size:14px;top:67mm;left:117mm" id="name">秦子轩</span>
-        <span contenteditable="true" class="cell" style="top:122mm;left:62mm;">优</span>
-        <span contenteditable="true" class="cell" style="top:122mm;left:75mm;">优</span>
-        <span contenteditable="true" class="cell" style="top:122mm;left:88mm;">优</span>
-        <span contenteditable="true" class="cell" style="top:122mm;left:101mm;">优</span>
-        <span contenteditable="true" class="cell" style="top:122mm;left:114mm;">优</span>
-        <span contenteditable="true" class="cell" style="top:122mm;left:127mm;">优</span>
-        <span contenteditable="true" class="cell" style="top:122mm;left:140mm;">优</span>
-        <span contenteditable="true" class="cell" style="top:122mm;left:153mm;">优</span>
-        <span contenteditable="true" class="cell" style="top:122mm;left:166mm;">优</span>
-        <span contenteditable="true" class="cell" style="top:122mm;left:179mm;">优</span>
-        
-        <span contenteditable="true" class="cell" style="top:137mm;left:62mm;">优</span>
-        <span contenteditable="true" class="cell" style="top:137mm;left:75mm;">优</span>
-        <span contenteditable="true" class="cell" style="top:137mm;left:88mm;">优</span>
-        <span contenteditable="true" class="cell" style="top:137mm;left:101mm;">优</span>
-        <span contenteditable="true" class="cell" style="top:137mm;left:114mm;">优</span>
-        <span contenteditable="true" class="cell" style="top:137mm;left:127mm;">优</span>
-        <span contenteditable="true" class="cell" style="top:137mm;left:140mm;">优</span>
-        <span contenteditable="true" class="cell" style="top:137mm;left:153mm;">优</span>
-        <span contenteditable="true" class="cell" style="top:137mm;left:166mm;">优</span>
-        <span contenteditable="true" class="cell" style="top:137mm;left:179mm;">优</span>
-
-        <span contenteditable="true" class="textArea" style="top:152mm;left:62mm;width:120mm;height: 35mm;overflow: hidden;" >
-            老师的话
-        </span>
-        <span contenteditable="true" style="font-size:14px;bottom:72mm;left:74mm">2019</span>
-        <span contenteditable="true" style="font-size:14px;bottom:72mm;left:88mm">1</span>
-        <span contenteditable="true" style="font-size:14px;bottom:72mm;left:99mm">19</span>
-        <span contenteditable="true" style="font-size:14px;bottom:72mm;left:153mm">2019</span>
-        <span contenteditable="true" style="font-size:14px;bottom:72mm;left:169mm">2</span>
-        <span contenteditable="true" style="font-size:14px;bottom:72mm;left:178mm">19</span>
-        <span contenteditable="true" style="font-size:14px;bottom:65mm;left:55mm">2</span>
-        <span contenteditable="true" style="font-size:14px;bottom:65mm;left:67mm">21</span>
-
-        <span contenteditable="true" style="font-size:14px;bottom:23mm;left:150mm">2019</span>
-        <span contenteditable="true" style="font-size:14px;bottom:23mm;left:166mm">1</span>
-        <span contenteditable="true" style="font-size:14px;bottom:23mm;left:175mm">16</span>
-    </div> 
-    <div style="position:fixed;top:30mm;left:220mm;font-size:20px;">
-        <button onclick="doPrint(this)">打印</button>
-        <!-- <br><br>
-        <button onclick="doSave(this)">存档</button> -->
-    </div>
-    <script>
-        function doPrint(ele){
-            ele.style.display='none';
-            window.print();
-            setTimeout(function(){
-                ele.style.display='block';
-            },1000)
-        }
-
-        function doSave(ele){
-            $('#app').wordExport($('#name').text())
-        }
-    </script>
+        <ul>
+            <li>
+                <a href="/tmpl/about/page.html">了解赢家</a>
+            </li>
+            <li>
+                <a href="/tmpl/player/page.html">视频/音频播放</a>
+            </li>
+            <li>
+                <a href="tmpl/buy/page.html">购买页面</a>
+            </li>
+        </ul>
 </body>
 </html>
