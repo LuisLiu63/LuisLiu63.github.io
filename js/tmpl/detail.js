@@ -33,14 +33,12 @@ $(function(){
             },
             ContentClick:function(e){
                 console.log(e)
-                
             }
         })
     })
 
     // 获取商品基本信息
     $.Request(urls.basicinfo,function(data){
-        console.log(data.data)
         $.FillData(data.data)
     },null,{
         type:'post',

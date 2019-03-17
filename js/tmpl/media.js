@@ -40,14 +40,29 @@ $(function(){
         sendComment()
     })
 
+    $('#comment-texter').on('focus',function(e){
+        setTimeout(function(){
+            $('#comment-texter').toggleClass('oninput')
+        },100)
+    })
+    
+    $('#comment-texter').on('blur',function(e){
+        setTimeout(function(){
+            $('#comment-texter').toggleClass('oninput')
+        },100)
+    })
+
     $('#comment-texter').on('keypress',function(e){
         if(e.keyCode == 13){
-            window.alert(e.keyCode)
             sendComment()
         }
     })
 
     function sendComment(){
+        var msg = $('#comment-texter').val();
+        if(!msg){
+            return;
+        }
         $.Request(urls.docomment,function(data){
             console.log(data)
             YJ_comment.AddComment({
@@ -55,12 +70,13 @@ $(function(){
                 avatar:'/images/bg6.jpg',
                 name:'新用户',
                 time:'2019-3-19',
-                content:'评论内容评论内容评论内容评论内容容评论内容',
+                content:msg,
                 thumbs:['/images/bg4.jpg','/images/bg5.jpg','/images/bg7.jpg']
-            })
+            });
+            $('#comment-texter').val('')
         },null,{
             type:'post',
-            data:$('#comment-texter').val(),
+            data:msg,
         })
     }
 
@@ -75,4 +91,5 @@ $(function(){
             },
         })
     })
+
 })

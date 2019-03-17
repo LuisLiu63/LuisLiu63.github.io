@@ -65,7 +65,8 @@
 
 
 .video-container{
-    height:35vh
+    position: relative;
+    height:35vh;
 }
 .content-container{
     height: 58.5vh;
@@ -74,6 +75,9 @@
 .button-container{
     height: 2.613rem;
     line-height: 2.613rem;
+}
+.audio-container{
+    
 }
 
 .detail-title p{
@@ -145,6 +149,9 @@
 .YJ-collapse-title.open +.collapse-content{
     max-height: 10rem;
     overflow-y: auto;
+}
+.YJ-collapse-title.open .YJ-collapse-toggler{
+    transform: rotateZ(-180deg);
 }
 
 /* 评论列表 */
@@ -220,13 +227,13 @@
     letter-spacing: 1px;
 }
 
-.comment-texter:focus{
+.comment-texter.oninput{
     width: 100%;
 }
-.comment-texter:focus ~.btns-group{
+.comment-texter.oninput ~.btns-group{
     display: none;
 }
-.comment-texter:focus ~.fire-btn{
+.comment-texter.oninput ~.fire-btn{
     display: inline-block;
 }
 

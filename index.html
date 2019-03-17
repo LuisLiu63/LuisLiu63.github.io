@@ -6,16 +6,81 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>说明文档</title>
 </head>
+<style>
+    ul{
+        padding-left:20px;
+    }
+    ul li{
+        margin-bottom: 10px;
+    }
+</style>
 <body>
         <ul>
             <li>
-                <a href="/tmpl/about/page.html">了解赢家</a>
+                <a href="/tmpl/about/page.html">了解赢家-about</a>
             </li>
             <li>
-                <a href="/tmpl/player/page.html">视频/音频播放</a>
+                <a href="tmpl/detail/page.html">详情页面-detail</a>
             </li>
             <li>
-                <a href="tmpl/detail/page.html">详情页面</a>
+                <a href="/tmpl/player/page.html">视频播放-player</a>
+            </li>
+            <li>
+                <a href="/tmpl/player/page_audio.html">音频播放-player</a>
+            </li>
+        </ul>
+        <h1>文档说明</h1>
+        
+        <ul>
+            <li>css
+                <ul>
+                    <li>tmpl</li>
+                    <li>videoJs:videoJs样式文件</li>
+                    <li>base.css:全局基本样式</li>
+                    <li>components.css:组件样式</li>
+                    <li>media.css:媒体查询器</li>
+                    <li>reset.css:元素样式重置</li>
+                </ul>
+            </li>
+            <li>images:测试图片文件夹</li>
+            <li>js
+                <ul>
+                    <li>tmpl
+                        <ul>
+                            <li>about.js:了解赢家js文件</li>
+                            <li>detail.js:商品详情js文件</li>
+                            <li>media.js:播放器js文件</li>
+                            <li>player.js:videoJs配置文件</li>
+                        </ul>
+                    </li>
+                    <li>video.min.js:videoJs库文件</li>
+                    <li>YJUI.js:项目组件库</li>
+                    <li>zepto.js:zepto.js库文件</li>
+                </ul>
+            </li>
+            <li>
+                node_modules:npm包(可以删除)
+            </li>
+            <li>testJson:模拟数据
+                <ul>
+                    <li>basicinfo.json:商品基本信息json模拟数据</li>
+                    <li>chapter.json:章节信息json模拟数据</li>
+                    <li>comment.json:评论json模拟数据</li>
+                    <li>product.json:产品列表json模拟数据</li>
+                </ul>
+            </li>
+            <li>
+                tmpl:html文件
+                <ul>
+                    <li>about:了解赢家页面</li>
+                    <li>detail:商品详情页面(购买页)</li>
+                    <li>player
+                        <ul>
+                            <li>page_audio.html:音频播放页面</li>
+                            <li>page.html:视频播放页面</li>
+                        </ul>
+                    </li>
+                </ul>
             </li>
         </ul>
 </body>

@@ -267,7 +267,7 @@ $.extend($, {
             </p>
             <p class="col-9">
                     ${item.title}
-                    <span class="YJ-collapse-toggler pull-right">↓</span>
+                    <span class="YJ-collapse-toggler pull-right slow">↓</span>
             </p>
             
         </div>
