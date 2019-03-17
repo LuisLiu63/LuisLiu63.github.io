@@ -1,12 +1,22 @@
 @import url(/css/reset.css);
+@import url(/css/media.css);
+@import url(/css/components.css);
 
 body,html{
+    /* font-size: 62.5%; */
     font-family: 'PingFang-SC';
     color:rgb(51,51,51);
     background-color: rgb(238,238,238);
+    letter-spacing: 1px;
+}
+input:focus{
+    outline: none;
 }
 
 /* 栅格 */
+.row{
+    display: flex;
+}
 .col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
     display: inline-block;
 }
@@ -49,25 +59,28 @@ body,html{
 
 /* 字号 */
 .fs-36{
-    font-size: 36px;
+    font-size: 0.96rem;
 }
 .fs-32{
-    font-size: 32px;
+    font-size: 0.853rem;
+}
+.fs-30{
+    font-size: 0.8rem;
 }
 .fs-28{
-    font-size: 28px;
+    font-size: 0.746rem;
 }
 .fs-26{
-    font-size: 26px;
+    font-size: 0.693rem;
 }
 .fs-24{
-    font-size: 24px;
+    font-size: 0.64rem;
 }
 .fs-22{
-    font-size: 22px;
+    font-size: 0.586rem;
 }
 .fs-20{
-    font-size: 20px;
+    font-size: 0.533rem;
 }
 
 /* 颜色 */
@@ -89,14 +102,27 @@ body,html{
 .c-red{
     color:rgb(196,0,0);
 }
+.c-white{
+    color:rgb(255, 255, 255);
+}
 
-.bg-white{
+.bgc-102{
+    background-color:rgb(102,102,102);
+}
 
+.bgc-white{
+    background-color:rgb(255, 255, 255);
 }
 
 /* 字重 */
 .fw-bold{
     font-weight: bold
+}
+.fw-normal{
+    font-weight: normal
+}
+.fw-lighter{
+    font-weight: lighter
 }
 
 /* 对齐 */
@@ -115,28 +141,76 @@ body,html{
     margin-bottom: 1px;
 }
 .mb-10{
-    margin-bottom: 10px;
+    margin-bottom: 0.266rem;
+}
+.mb-12{
+    margin-bottom: 0.32rem;
 }
 .mb-16{
-    margin-bottom: 16px;
+    margin-bottom: 0.426rem;
 }
 .mb-20{
-    margin-bottom: 20px;
+    margin-bottom: 0.533rem;
+}
+.mb-24{
+    margin-bottom: 0.64rem;
+}
+.mb-40{
+    margin-bottom: 1.066rem;
+}
+.mb-60{
+    margin-bottom: 1.6rem;
 }
 
 .pa-20{
-    padding: 20px;
+    padding: 0.533rem;
+    box-sizing: border-box;
 }
 .ptb-40{
-    padding: 40px 0;
+    padding: 1.066rem 0;
+}
+.ptb-20{
+    padding: 0.533rem 0;
+}
+
+.pltr{
+    padding: 1.066rem 0.533rem 0 0.533rem;
+}
+
+.plr-20{
+    padding: 0 0.533rem;
+}
+
+.pl-20{
+    padding-left: 0.533rem;
+}
+.pl-40{
+    padding-left: 1.066rem;
+}
+.pl-60{
+    padding-left: 1.6rem;
+}
+
+.pb-60{
+    padding-bottom: 1.6rem;
+}
+
+.pb-0{
+    padding-bottom: 0;
 }
 
 /* 边框线 */
 .bd-1{
     border-bottom: 1px solid rgb(238,238,238)
 }
+.bt-1{
+    border-top: 1px solid rgb(238,238,238)
+}
 
 /* 功能 */
+.slow{
+    transition: all .2s ease;
+}
 .pos-center{
     position: absolute;
     top:50%;
@@ -147,6 +221,10 @@ body,html{
     float: right;
 }
 
+.block{
+    display: block;
+    max-width: 100%;
+}
 .flex{
     display: flex;
 }
@@ -156,52 +234,6 @@ body,html{
 .between{
     justify-content: space-between
 }
-
-/* 组件 */
-.page-block{
-    background-color: #fff;
-}
-.product-item{
-    display: flex;
-}
-.product-item.column{
-    display: flex;
-    flex-direction: column;
-}
-.product-item .thumbs{
-    display: inline-block;
-    width: 30%;
-    margin-right: 20px;
-}
-.product-item div{
-    vertical-align: top;
-}
-.product-item .desc{
-    display: flex;
-    justify-content:space-between;
-    flex-direction: column;
-}
-.img-cover,.card{
-    width: 100%;
-    padding-bottom: 100%;
-    background-size: 100% auto;
-    background-color: #ccc;
-    border-radius: 5px;
-}
-
-.card{
-    position: relative;
-    padding-bottom:75%;
-    background-color: #fff;
-    border:1px solid #ccc;
-}
-.card-content{
-    display: flex;
-    justify-content: space-between;
-    width:70%;
-    /* line-height: 18px; */
-}
-
-.symbol{
-    font-size:12px;
+.throwLine{
+    text-decoration: line-through;
 }

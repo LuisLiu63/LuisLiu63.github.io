@@ -1,0 +1,17 @@
+{
+    "data":[{
+        "id":11,
+        "avatar":"/images/bg6.jpg",
+        "name":"用户名用户名",
+        "time":"2019-3-19",
+        "content":"评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容",
+        "thumbs":["/images/bg1.jpg","/images/bg2.jpg","/images/bg3.jpg"]
+    },{
+        "id":12,
+        "avatar":"/images/bg6.jpg",
+        "name":"新用户",
+        "time":"2019-3-17",
+        "content":"评论内容评论内容评论内容评论内容评论内容评论内容评论内容评论内容",
+        "thumbs":["/images/bg1.jpg","/images/bg2.jpg","/images/bg3.jpg"]
+    }]
+}

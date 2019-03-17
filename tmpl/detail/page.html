@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/videoJs/video-js.min.css">
+    <title>详情</title>
+</head>
+<style>
+    body{
+        background-color: #fff;
+    }
+</style>
+<body>
+    <div class="video-container">
+        <video id="YJ-Player" class="video-js vjs-big-play-centered vjs-fluid vjs-default-skin" controls preload="none" width="100%" height="100%">
+
+        </video>
+    </div>
+    <div class=" content-container">
+        <div class="pa-20 mb-60">
+            <div class="detail-title mb-20">
+                    <p id="name" class="col-10 fs-28 c-51 fw-bold">
+                        标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题
+                    </p>
+                    <span class="badge pull-right">收藏</span>
+            </div>
+            <span class="fs-24 c-red detail-price">￥<b id="newprice" class="fs-36">000.00</b></span>
+            <span class="fs-20 c-153 throwLine">原价：￥ <span id="oldprice">000.00</span></span>
+        </div>
+        <div>
+            <div class="YJ-Tabs">
+                <div class="tabs-head fs-30 mb-40">
+                    <span class="col-4 slow" data-page="#intro">简介</span>
+                    <span class="col-4 slow" data-page="#chapter">目录</span>
+                    <span class="col-4 slow" data-page="#comment">评价</span>
+                </div>
+                <div class="tabs-content pa-20">
+                    <div id="intro" class="tabs-content-page">
+                        <img class="block" src="/images/bg1.jpg" alt="">
+                    </div>
+                    <div id="chapter" class="tabs-content-page">
+                        <div class="YJ-Collapse"></div>
+                    </div>
+                    <div id="comment" class="tabs-content-page">
+                        <div class="row between mb-40 fs-28 c-51">
+                            <div class="col-5">
+                                商品评价    共<span id="commentCount">16</span>
+                            </div>
+                            <div class="col-5 text-right">
+                                <span class="box-26" style="background-image:url(/images/bg7.jpg)"></span>
+                                好评率 <span class="c-red">100%</span>
+                            </div>
+                        </div>
+                        <div class="YJ-Comment"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="button-container row between bt-1">
+        <div class="call-button pl-60 fs-28 c-102">
+            <button class="foot-btn">
+                <span class="box-40"></span>
+                咨询
+            </button>
+        </div>
+        <div class="buy-button text-center bgc-102 c-white">
+            立即购买
+        </div>
+    </div>
+
+    <script type="text/html">
+        <div class="YJ-Collapse">
+            <div class="YJ-collapse-item mb-40">
+                <div class="YJ-collapse-title row fs-26 fw-bold mb-24 open">
+                    <p class="pl-40 col-2">
+                            第一期 &nbsp;&nbsp;
+                    </p>
+                    <p class="col-9">
+                            小标题小标题小标题小标题小标题
+                            <span class="YJ-collapse-toggler pull-right">↓</span>
+                    </p>
+                    
+                </div>
+                <div class="collapse-content">
+                        <div class="row mb-24">
+                            <p class="col-2 pl-40">
+                                △
+                            </p>
+                            <p class="col-9">
+                                <span class="block fs-22 c-102 mb-12">第一节标题</span>
+                                <span class="block fs-20 c-167">6分钟</span>
+                            </p>
+                            
+                        </div>
+                        <div class="row mb-24">
+                            <p class="col-2 pl-40">
+                                △
+                            </p>
+                            <p class="col-9">
+                                <span class="block fs-22 c-102 mb-12">第一节标题</span>
+                                <span class="block fs-20 c-167">6分钟</span>
+                            </p>
+                            
+                        </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="YJ-Comment">
+            <div class="comment-item row mb-60">
+                <div class="col-1">
+                    <span class="comment-avatar" style="background-image:url(/images/bg6.jpg)">
+
+                    </span>
+                </div>
+                <div class="col-11">
+                    <p class="comment-username fs-26 mb-12">
+                        昵称昵称
+
+                        <span class="box-26" style="background-image:url(/images/bg1.jpg)"></span>
+                        <span class="box-26" style="background-image:url(/images/bg2.jpg)"></span>
+                        <span class="box-26" style="background-image:url(/images/bg3.jpg)"></span>
+                        <span class="box-26" style="background-image:url(/images/bg4.jpg)"></span>
+                        <span class="box-26" style="background-image:url(/images/bg5.jpg)"></span>
+                    </p>
+                    <span class="block fs-24 c-153 mb-24">
+                        2019-3-1
+                    </span>
+                    <p class="fs-26 c-51">
+                        评论评论评论评论评论评论评论评论评论评论评论评论评论
+                        评论评论评论评论评论评论评论评论评论评论评论
+                        评论评论
+                    </p>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script src="/js/zepto.js"></script>
+    <script src="/js/video.min.js"></script>
+    <script src="/js/YJUI.js"></script>
+    <script src="/js/tmpl/player.js"></script>
+    <script src="/js/tmpl/detail.js"></script>
+</body>
+</html>
