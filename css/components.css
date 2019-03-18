@@ -186,7 +186,7 @@
     background-color: rgb(75, 74, 74);
     background-size: 100% 100%;
 }
-.comment-username .box-26{
+.comment-username>.box-26,.comment-username .text-btn{
     float:right;
 }
 
@@ -247,7 +247,7 @@
     height: 0.266rem;
 }
 
-.foot-btn{
+.foot-btn,.text-btn{
     padding: 0;
     border:none;
     background-color: transparent;

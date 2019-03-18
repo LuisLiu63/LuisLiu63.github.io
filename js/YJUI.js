@@ -177,10 +177,10 @@ $.extend($, {
 
                 </span>
             </div>
-            <div class="col-11">
+            <div class="col-11 pl-20">
                 <p class="comment-username fs-26 mb-12">
                     ${com.name}
-                    ${picList(com.thumbs)}
+                    ${picList(com)}
                 </p>
                 <span class="block fs-24 c-153 mb-24">
                     ${com.time}
@@ -195,10 +195,12 @@ $.extend($, {
 
     function picList(pics){
         let list = '';
-        if(pics&&pics.length){
-            pics.forEach(function(li,i){
+        if(pics.thumbs&&pics.thumbs.length){
+            pics.thumbs.forEach(function(li,i){
                 list += `<span class="box-26" style="background-image:url(${li})"></span>`
             })
+        }else if(pics.agree){
+            list = `<button class="text-btn fs-22 c-102"><span class="box-26" style="background-image:url()"></span>${pics.agree}</button>`
         }
         
         return list
