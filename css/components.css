@@ -1,4 +1,17 @@
 
+
+.icon_dianzan_checked{
+    background-image:url(../images/icon/dianzan@2x.gif)
+}
+.icon_shoucang{
+    background-image: url(../images/icon/shoucang_default@2x.gif)
+}
+.icon_shoucang_checked{
+    background-image: url(../images/icon/shoucang_selected@2x.gif)
+}
+.icon_zixun{
+    background-image: url(../images/icon/zixun.gif)
+}
 /* 组件 */
 .page-block{
     background-color: #fff;
@@ -93,7 +106,8 @@
     margin-top:0.5rem;
     font-size:0.5rem;
     text-align: center;
-    background-color:rgb(83, 83, 83);
+    background-size:100% 100%;
+    /* background-color:rgb(83, 83, 83); */
 }
 .detail-price{
     display: inline-block;
@@ -150,6 +164,9 @@
     max-height: 10rem;
     overflow-y: auto;
 }
+/* .YJ-collapse-title .YJ-collapse-toggler{
+    transform: rotateZ(-180deg);
+} */
 .YJ-collapse-title.open .YJ-collapse-toggler{
     transform: rotateZ(-180deg);
 }
@@ -160,8 +177,9 @@
     width:0.693rem;
     height:0.693rem;
     margin-right: 0.3rem;
-    background-color: rgb(75, 74, 74);
+    /* background-color: rgb(75, 74, 74); */
     background-size: 100% 100%;
+
 }
 .box-30{
     display: inline-block;
@@ -169,14 +187,25 @@
     height: 1.6rem;
     margin-right: 0.533rem;
     background-color: rgb(75, 74, 74);
+    background-size: 100% 100%;
 }
-.box-40{
+.box-40,.box-60{
     display: inline-block;
     width:1.066rem;
     height: 1.066rem;
     margin-right: 0.2rem;
     vertical-align: bottom;
-    background-color: rgb(75, 74, 74);
+    /* background-color: rgb(75, 74, 74); */
+    background-size: 100% 100%;
+    text-align: center;
+}
+.box-60{
+    width:1.6rem;
+    height: 1.6rem;
+}
+.box-60 img{
+    display: inline-block;
+    height: 100%;
 }
 .comment-avatar{
     display: inline-block;

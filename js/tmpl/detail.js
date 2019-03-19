@@ -47,7 +47,10 @@ $(function(){
         }
     })
 
+    // 收藏
+    $('#collectThis').on('click',function(e){
 
+    })
     
     
 })

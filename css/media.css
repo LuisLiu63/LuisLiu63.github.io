@@ -1,35 +1,35 @@
 @media screen and(min-width: 320px)and(max-width: 359px){ 
     html{ 
-    font-size: 16px; 
+        font-size: 16px; 
     } 
-    } 
-    @media screen and(min-width: 360px)and(max-width: 374px){ 
+} 
+@media screen and(min-width: 360px)and(max-width: 374px){ 
     html{ 
-    font-size: 18px; 
+        font-size: 18px; 
     } 
-    } 
-    @media screen and(min-width: 375px)and(max-width: 385px){ 
+} 
+@media screen and(min-width: 375px)and(max-width: 385px){ 
     html{ 
-    font-size: 18.75px; 
+        font-size: 18.75px; 
     } 
-    } 
-    @media screen and(min-width: 386px)and(max-width: 392px) { 
+} 
+@media screen and(min-width: 386px)and(max-width: 392px) { 
     html { 
-    font-size: 19.3px; 
+        font-size: 19.3px; 
     } 
-    } 
-    @media screen and(min-width: 393px)and(max-width: 400px){ 
+} 
+@media screen and(min-width: 393px)and(max-width: 400px){ 
     html{ 
-    font-size: 19.65px; 
+        font-size: 19.65px; 
     } 
-    } 
-    @media screen and(min-width: 401px)and(max-width: 414px){ 
+} 
+@media screen and(min-width: 401px)and(max-width: 414px){ 
     html{ 
-    font-size: 20.05px; 
+        font-size: 20.05px; 
     } 
-    } 
-    @media screen and(min-width: 750px)and(max-width: 799px){ 
+} 
+@media screen and(min-width: 750px)and(max-width: 799px){ 
     html{ 
-    font-size: 37.5px; 
+        font-size: 37.5px; 
     } 
-    } 
+} 

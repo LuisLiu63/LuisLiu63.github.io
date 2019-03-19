@@ -200,7 +200,7 @@ $.extend($, {
                 list += `<span class="box-26" style="background-image:url(${li})"></span>`
             })
         }else if(pics.agree){
-            list = `<button class="text-btn fs-22 c-102"><span class="box-26" style="background-image:url()"></span>${pics.agree}</button>`
+            list = `<button class="text-btn fs-22 c-102"><span class="box-26 icon_dianzan_checked"></span>${pics.agree}</button>`
         }
         
         return list
