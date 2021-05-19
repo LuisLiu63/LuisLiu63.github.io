@@ -1,1 +1,49 @@
-<!DOCTYPE html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico"><title>mypage_vue</title><link href="/js/about.4adbaba5.js" rel="prefetch"><link href="/css/app.b229284b.css" rel="preload" as="style"><link href="/js/app.920e0e4b.js" rel="preload" as="script"><link href="/js/chunk-vendors.7f449584.js" rel="preload" as="script"><link href="/css/app.b229284b.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but mypage_vue doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="/js/chunk-vendors.7f449584.js"></script><script src="/js/app.920e0e4b.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cemap example</title>
+    <link rel="stylesheet" href="./cemap/Widgets/widgets.css">
+    <script src="./cemap/cemap.js"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .detail-container{
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+            padding: 10px;
+            width: 300px;
+            max-height: 200px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        .popover-content{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .popover-content img{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="map-container" style="width: 100vw; height: 100vh;"></div>
+
+    <div id="detail-container" class="detail-container">
+
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
